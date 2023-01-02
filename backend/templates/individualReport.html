@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="topnav">
+          <a class="active" href="{% url 'home'%}">Home</a>
+          <a href="{% url 'loginpage'%}">Login</a>
+          <a href="{% url 'registerpage'%}">Register</a>
+          <a href="{% url 'logoutpage'%}">Logout</a>
+          <a href="{% url 'individualreport'%}">My Report</a>
+      
+      </div>
+      </nav>
+    <h3>Welcome to your Personal and Private Health Report Page</h3>
+</body>
+</html>

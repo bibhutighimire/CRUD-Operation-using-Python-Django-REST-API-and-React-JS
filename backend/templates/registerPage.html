@@ -1,0 +1,18 @@
+{% load crispy_forms_tags %}
+<div class="topnav">
+    <a class="active" href="{% url 'home'%}">Home</a>
+    <a href="{% url 'loginpage'%}">Login</a>
+    <a href="{% url 'registerpage'%}">Register</a>
+    <a href="{% url 'logoutpage'%}">Logout</a>
+    <a href="{% url 'individualreport'%}">My Report</a>
+
+</div>
+<form method="post" class="my-class">
+    {% csrf_token %}
+    {{ form|crispy }}
+    <button type="submit">Register</button>
+</form>
+
+<p>Already a member? </p><a href="{% url 'loginpage'%}">LOGIN</a>
+
+ 
